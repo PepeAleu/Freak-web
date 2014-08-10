@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>E/R</title>
+
+<script type="text/javascript"> 
+	var opacidad=0.1;
+	var inter;	
+	
+function muestra(){
+						
+			if(opacidad<=0.8){	
+				opacidad = opacidad + 0.1;
+				principal2.style.opacity = opacidad;
+			}
+			else{
+				clearInterval(inter);
+			}			
+		} 
+
+function VerMonstruos() 
+{ 
+
+document.getElementById("principal2").src="Imagenes/monstruos.png";
+principal2.style.opacity = 0.1;
+opacidad = 0.1;
+inter = setInterval(muestra,100);
+}
+		
+function VerObjetos() 
+{ 
+
+document.getElementById("principal2").src="Imagenes/objetos.png";
+principal2.style.opacity = 0.1;
+opacidad = 0.1;
+inter = setInterval(muestra,100);
+} 
+
+function VerAventuras() 
+{ 
+
+document.getElementById("principal2").src="Imagenes/aventuras.png";
+principal2.style.opacity = 0.1;
+opacidad = 0.1;
+inter = setInterval(muestra,100);
+} 
+
+function VerPersonajes() 
+{ 
+
+document.getElementById("principal2").src="Imagenes/personajes.png";
+principal2.style.opacity = 0.1;
+opacidad = 0.1;
+inter = setInterval(muestra,100);
+} 
+
+function VerUniversos() 
+{ 
+
+document.getElementById("principal2").src="Imagenes/universos.png";
+principal2.style.opacity = 0.1;
+opacidad = 0.1;
+inter = setInterval(muestra,100);
+} 
+
+function VerEscenarios() 
+{ 
+
+document.getElementById("principal2").src="Imagenes/escenarios.png";
+principal2.style.opacity = 0.1;
+opacidad = 0.1;
+inter = setInterval(muestra,100);
+} 
+
+function VerBitacora() 
+{ 
+
+document.getElementById("principal2").src="Imagenes/bitacora.png";
+principal2.style.opacity = 0.1;
+opacidad = 0.1;
+inter = setInterval(muestra,100);
+} 
+
+function VerInventario() 
+{ 
+
+document.getElementById("principal2").src="Imagenes/inventario.png";
+principal2.style.opacity = 0.1;
+opacidad = 0.1;
+inter = setInterval(muestra,100);
+} 
+
+function VerDuelo() 
+{ 
+
+document.getElementById("principal2").src="Imagenes/duelo.png";
+principal2.style.opacity = 0.1;
+opacidad = 0.1;
+inter = setInterval(muestra,100);
+} 
+
+function Ocultar()
+{
+document.getElementById("principal2").src="Imagenes/bitmap.png";
+principal2.style.opacity = 0;
+opacidad = 0;
+}
+
+</script> 
+
+<STYLE TYPE="text/css" MEDIA="screen, projection">
+
+.imagen{
+	position: absolute;
+	left: 50px;
+	top: 50px;
+	z-index: 2;
+	
+	}
+
+.fondo{
+	position: absolute;
+	left: 50px;
+	top: 50px;
+	z-index: 1;
+	}
+
+</STYLE>
+
+<body>
+
+<div class="imagen">
+	<img src="Imagenes/bitmap.png" alt="ER" width="800" height="600" border="0" usemap="#Map" id="principal2" />
+</div>
+
+<div class="fondo">
+	<img src="Imagenes/bitmap.png" alt="ER" width="800" height="600" border="0" usemap="#Map" id="principal"/>
+</div>
+
+	<map name="Map" id="Map">
+	
+	  <area shape="rect" coords="230,102,374,174" href="mons_lista.php" target="_self" alt="Monstruos" onmouseover="VerMonstruos()" onmouseout="Ocultar()"/>
+	  <area shape="rect" coords="27,273,172,344" href="obje_lista.php" target="_self" alt="Objetos" onmouseover="VerObjetos()" onmouseout="Ocultar()" />
+	  <area shape="rect" coords="635,103,779,174" href="aven_lista.php" target="_self" alt="aventuras" onmouseover="VerAventuras()" onmouseout="Ocultar()" />
+	  <area shape="rect" coords="434,273,578,343" href="pers_lista.php" target="_self" alt="personajes" onmouseover="VerPersonajes()" onmouseout="Ocultar()" />
+	  <area shape="rect" coords="384,442,528,514" href="univ_lista.php" target="_self" alt="universos" onmouseover="VerUniversos()" onmouseout="Ocultar()" />
+	  <area shape="rect" coords="638,443,782,513" href="esce_lista.php" target="_self" alt="Escenarios" onmouseover="VerEscenarios()" onmouseout="Ocultar()" />
+	  <area shape="poly" coords="499,100,436,138,500,176,566,138" href="bita_lista.php" target="_self" alt="Bitacora" onmouseover="VerBitacora()" onmouseout="Ocultar()" />
+	  <area shape="poly" coords="301,271,237,308,302,347,367,309" href="inve_lista.php" target="_self" alt="" onmouseover="VerInventario()" onmouseout="Ocultar()" />
+	  <area shape="poly" coords="658,269,594,308,659,347,725,309" href="duel_lista.php" target="_self" alt="duelo" onmouseover="VerDuelo()" onmouseout="Ocultar()" />
+	  
+	</map>
+
+</body>
+</html>

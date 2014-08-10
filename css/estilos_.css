@@ -1,0 +1,107 @@
+body{
+top: 0px;
+left: 0px;
+margin-top: 0px;
+margin-left: 0px;
+padding:0px;
+font-family: sans serif,arial, helvetica;
+font-size: small;
+color:#000000;
+background-position:center top;
+background-repeat:no-repeat;
+background-color:#000;
+}
+
+p,h3,h2{
+padding:15px 50px 15px 50px;
+}
+
+div.general,div.contenido{
+left: 50%;
+position: absolute;
+border-radius: 10px 10px;
+z-index:2;
+}
+div.contenido{
+background-color:#ec6633;
+margin-left: -100px;
+width: 550px;
+height: 500px;
+top: 180px;
+background: -webkit-linear-gradient(white, #cccccc);
+background: -moz-linear-gradient(white,#cccccc);
+background: -o-linear-gradient(white, #cccccc);
+color:#cd5c5c;
+-webkit-box-shadow: 0 0 10px rgb(0,0,0);      
+-moz-box-shadow: 0 0 10px rgb(0,0,0);  
+box-shadow: 0 0 10px rgb(0,0,0);  
+
+
+}
+div.general{
+top: 100px;
+margin-left: -500px;
+width: 1000px;
+height: 800px;
+/*background-image:url('../pics/patrones/rafters.gif');*/
+opacity: 0.7;
+filter: "alpha(opacity=70)"; /* expected to work in IE 8 */
+filter: alpha(opacity=70);   /* IE 4-7 */
+zoom: 1;                   
+background: -webkit-linear-gradient(white, #ffc77e);
+background: -moz-linear-gradient(white,#ffc77e);
+background: -o-linear-gradient(white, #ffc77e);
+
+-webkit-box-shadow: 0 0 10px rgb(0,0,0);        
+-moz-box-shadow: 0 0 10px rgb(0,0,0);       
+box-shadow: 0 0 10px rgb(0,0,0);
+}
+div.detalles{
+position:absolute;
+left:50px;
+top:20px;
+}
+div.detalles p,h3{
+margin:0px;
+}
+div.titulo{
+position: absolute;
+width: 900px;
+height: 32px;
+left: 50%;
+top: -60px;
+margin-left: -643px;
+border-radius: 20px 20px;
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+color:#fff;
+background: -webkit-linear-gradient(#a62917,#ffc77e);
+background: -moz-linear-gradient(#a62917,#ffc77e);
+background: -o-linear-gradient(#a62917,#ffc77e);
+font-size: x-large;
+padding:1px 0px 0px 20px;
+-webkit-box-shadow: 0 0 10px rgb(0,0,0);        
+-moz-box-shadow: 0 0 10px rgb(0,0,0);       
+box-shadow: 0 0 10px rgb(0,0,0);
+}
+
+div.foto{
+width:300px;
+height:300px;
+left: 50%;
+margin-left:-640px;
+top: 0px;
+position: absolute;
+z-index:3;
+border-radius: 10px 10px;
+background-image:url("../pics/personajes/JPEG/2.jpg");
+
+}
+
+img.fondo{
+position:absolute;
+top:-150px;
+left:50%;
+margin-left: -960px;
+z-index:1;
+
+}
